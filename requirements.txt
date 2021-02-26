@@ -18,7 +18,8 @@ scikit-fuzzy
 pyevtk
 netcdf4
 colorlover
-badlands
+git+git://github.com/badlands-model/badlands.git
+git+git://github.com/badlands-model/badlands-companion.git
 
 
 
