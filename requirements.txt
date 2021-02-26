@@ -12,7 +12,12 @@ cmocean
 gFlex
 shapely
 descartes
-
+tribad
+plotly
+scikit-fuzzy
+pyevtk
+netcdf4
+colorlover
 
 
 
