@@ -2,14 +2,13 @@ numpy==1.15.0
 matplotlib==3.0
 scipy==1.2
 scikit-image==0.15
-cmocean
 triangle
 meshplex
 h5py==2.8.0
 six==1.11.0
 setuptools==38.4.0
 pandas==0.24
-cmoocean==2.0
+cmocean==2.0
 gFlex==1.1.0
 shapely==1.7.1
 descartes==1.1.0
