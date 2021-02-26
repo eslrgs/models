@@ -2,6 +2,7 @@ numpy==1.15.0
 matplotlib==3.0
 scipy==1.2
 scikit-image==0.15
+cmocean
 triangle
 meshplex
 h5py==2.8.0
