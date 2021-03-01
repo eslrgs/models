@@ -631,3 +631,4 @@ class catchmentErosion:
         triangles = list(polygonize(m))
 
         return cascaded_union(triangles), edge_points
+    
