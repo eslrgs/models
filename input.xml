@@ -92,7 +92,7 @@
               frequency, channel hydraulics. In case where the erodibility 
               structure is turned on, this coefficient is applied to the reworked
               sediments. [was 6.5e-7] -->
-        <erodibility>1e-5</erodibility>>
+        <erodibility>1e-6</erodibility>>
         <!-- Values of m and n indicate how the incision rate scales
              with bed shear stress for constant value of sediment flux
              and sediment transport capacity.
@@ -138,6 +138,20 @@
         <cfail>0.1</cfail>
     </creep>
 
+    <erocoeff>
+        <!-- Number of erosion layers. -->
+        <erolayers>1</erolayers>
+        <!-- The layering is defined from top to bottom, with:
+            - either a constant erodibility value for the entire layer or with an erodibility map
+            - either a constant thickness for the entire layer or with a thickness map -->
+        <erolay>
+            <!-- Variable erodibilities for the considered layer. -->
+            <eromap>data/ero.csv</eromap>
+            <!-- Uniform thickness value for the considered layer [m]. -->
+            <thcst>1000</thcst>
+        </erolay>
+    </erocoeff>
+    
     <!-- Output folder path -->
     <outfolder>outputs/model</outfolder>
 
