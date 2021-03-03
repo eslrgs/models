@@ -232,10 +232,13 @@ class catchmentErosion:
             ax.plot(pt[0],pt[1], 'o', markersize=10, markerfacecolor='#f442a1',
                      markeredgewidth=1.5, markeredgecolor='k')
 
-        ax.set_yticks(np.linspace(0, 300000, 7))
-        ax.set_yticklabels(['0', '50', '100', '150', '200', '250', '300'])
-        ax.set_xticks(np.linspace(0, 300000, 7))
-        ax.set_xticklabels(['0', '50', '100', '150', '200', '250', '300'])
+        ax.set_yticks([0, 10000, 20000, 30000, 40000, 50000])
+        ax.set_yticklabels(['0', '10', '20', '30', '40', '50'])
+        ax.set_xticks([0, 10000, 20000, 30000, 40000, 50000])
+        ax.set_xticklabels(['0', '10', '20', '30', '40', '50'])
+        
+        ax.set_ylim(0, 50000)
+        ax.set_xlim(0, 50000)
 
         ax.set_ylabel('y [km]')
         ax.set_xlabel('x [km]')

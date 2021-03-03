@@ -18,6 +18,7 @@ scikit-fuzzy
 pyevtk
 netcdf4
 colorlover
-fortran-magic
+badlands
+badlands-companion
 
 

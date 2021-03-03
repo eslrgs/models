@@ -19,11 +19,11 @@
         <!-- Simulation start time [a] -->
         <start>0.</start>
         <!-- Simulation end time [a] -->
-        <end>100000.</end>
+        <end>1000000.</end>
         <!-- Minimum time step [a]. Default is 1. -->
         <!-- mindt>10000.</mindt -->
         <!-- Display interval [a] -->
-        <display>10000.</display>
+        <display>100000.</display>
         <!-- Mesh output frequency based on the display interval. (integer)
          Considering a display interval of T yrs and a mesh output of K
          the mesh will be stored every T*K yrs - (optional default is 1) -->
@@ -45,7 +45,7 @@
             <!-- Rain start time [a] -->
             <rstart>0.</rstart>
             <!-- Rain end time [a] -->
-            <rend>100000.</rend>
+            <rend>1000000.</rend>
             <!-- Precipitation value [m/a] - (optional) -->
             <rval>1.</rval>
         </rain>
@@ -60,7 +60,7 @@
             <!-- Displacement start time [a] -->
             <dstart>0.</dstart>
             <!-- Displacement end time [a] -->
-            <dend>100000.0</dend>
+            <dend>1000000.0</dend>
             <!-- Displacement map [m] -->
             <dfile>data/uplift.csv</dfile>
         </disp>
@@ -71,7 +71,7 @@
         <!-- Stratal grid resolution [m] -->
         <stratdx>1000.</stratdx>
         <!-- Stratal layer interval [a] -->
-        <laytime>10000.</laytime>
+        <laytime>100000.</laytime>
         <!-- Surface porosity  -->
         <poro0>0.42</poro0>
         <!-- characteristic constant for Athy's porosity law  [/km] -->
@@ -92,7 +92,7 @@
               frequency, channel hydraulics. In case where the erodibility 
               structure is turned on, this coefficient is applied to the reworked
               sediments. [was 6.5e-7] -->
-        <erodibility>5e-6</erodibility>>
+        <erodibility>1e-6</erodibility>>
         <!-- Values of m and n indicate how the incision rate scales
              with bed shear stress for constant value of sediment flux
              and sediment transport capacity.
