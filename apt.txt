@@ -1,4 +1,3 @@
-badlands
-badlands-companion
+gfortran
 
 
