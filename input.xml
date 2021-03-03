@@ -92,7 +92,7 @@
               frequency, channel hydraulics. In case where the erodibility 
               structure is turned on, this coefficient is applied to the reworked
               sediments. [was 6.5e-7] -->
-        <erodibility>1e-6</erodibility>>
+        <erodibility>1e-5</erodibility>>
         <!-- Values of m and n indicate how the incision rate scales
              with bed shear stress for constant value of sediment flux
              and sediment transport capacity.
