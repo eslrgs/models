@@ -77,11 +77,14 @@ def time_slice(path, sea, crange, title):
     for i in [1, 2, 5, 8, 10]:
         
         print(f'Loading {(i / 10)} my..')
+        
+        contours = np.arange(crange[0], crange[1], 10)
+        contours = np.delete(contours, np.where(contours == 0))
 
         dataTIN = eroCatch.catchmentErosion(folder = path, timestep = i)
         dataTIN.regridTINdataSet()
         dataTIN.plotdataSet(data = dataTIN.dz, color='RdBu_r', 
-                            depctr = np.arange(crange[0], crange[1], 20),
+                            depctr = contours,
                 crange=crange, erange=[0, 50000, 0, 50000], lw=0.5, size=(2, 2), ax=ax[x])
         
         ax[x].set_title(f'{(i / 10)} my')
